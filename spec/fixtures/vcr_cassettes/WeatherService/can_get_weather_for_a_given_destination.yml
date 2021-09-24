@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?appid=9cce38001043568898b3ad0ffbd9050f&lat=37.5858662&lon=-85.67330523
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Fri, 24 Sep 2021 04:59:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '521'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=37.59&lon=-85.67"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-85.6733,"lat":37.5859},"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"base":"stations","main":{"temp":282.34,"feels_like":281.62,"temp_min":280.74,"temp_max":285.19,"pressure":1019,"humidity":73,"sea_level":1019,"grnd_level":988},"visibility":10000,"wind":{"speed":1.75,"deg":243,"gust":1.74},"clouds":{"all":0},"dt":1632459546,"sys":{"type":1,"id":3967,"country":"US","sunrise":1632483142,"sunset":1632526611},"timezone":-14400,"id":4294937,"name":"Hodgenville","cod":200}'
+  recorded_at: Fri, 24 Sep 2021 04:59:07 GMT
+recorded_with: VCR 6.0.0
