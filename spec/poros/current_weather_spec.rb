@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Weather do 
+RSpec.describe CurrentWeather do 
   it 'exists and has attributes' do 
     attrs = {:lat=>37.5859,
              :lon=>-85.6733,
@@ -23,7 +23,7 @@ RSpec.describe Weather do
                :wind_gust=>3.23,
                :weather=>[{:id=>800, :main=>"Clear", :description=>"clear sky", :icon=>"01d"}]}}
 
-    weather = Weather.new(attrs)
+    weather = CurrentWeather.new(attrs)
 
     expect(weather.conditions).to eq("clear sky")
     expect(weather.feels_like).to eq(70.3)

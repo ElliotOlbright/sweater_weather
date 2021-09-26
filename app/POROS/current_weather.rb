@@ -1,4 +1,4 @@
-class Weather
+class CurrentWeather
   attr_reader :lat,
               :lon,
               :timezone,
