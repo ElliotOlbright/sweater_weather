@@ -1,4 +1,4 @@
-class Weather 
+class Weather
   attr_reader :lat,
               :lon,
               :timezone,
@@ -10,20 +10,26 @@ class Weather
               :uvi,
               :visibility,
               :conditions,
-              :icon
+              :icon,
+              :dt
 
   def initialize(data)
     @lat                  = data[:lat]
     @lon                  = data[:lon]
     @timezone             = data[:timezone]
-    @sunrise              = data[:current][:sunrise]
-    @sunset               = data[:current][:sunset]
-    @temp                 = data[:current][:temp]
-    @feels_like           = data[:current][:feels_like]
+    @dt                   = Time.at(data[:current][:dt])
+    @sunrise              = Time.at(data[:current][:sunrise])
+    @sunset               = Time.at(data[:current][:sunset])
+    @temp                 = k_to_f(data[:current][:temp])
+    @feels_like           = k_to_f(data[:current][:feels_like])
     @humidity             = data[:current][:humidity]
     @uvi                  = data[:current][:uvi]
     @visibility           = data[:current][:visibility]
     @conditions           = data[:current][:weather][0][:description]
     @icon                 = data[:current][:weather][0][:icon]
+  end
+
+  def k_to_f(k)
+    ((k - 273.15) * 9 / 5 + 32).round(2)
   end
 end 

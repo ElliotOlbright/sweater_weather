@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/spec/facades/weather_facade_spec.rb": {
+      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/spec/poros/weather_spec.rb": {
         "lines": [
           1,
           null,
@@ -25,8 +25,24 @@
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          1,
+          null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -324,41 +340,6 @@
           null
         ]
       },
-      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/facades/weather_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/services/weather_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/services/base_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/POROS/weather.rb": {
         "lines": [
           1,
@@ -375,6 +356,8 @@
           null,
           null,
           null,
+          null,
+          1,
           1,
           1,
           1,
@@ -391,11 +374,12 @@
           null,
           null,
           1,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1632677722
+    "timestamp": 1632680173
   }
 }
