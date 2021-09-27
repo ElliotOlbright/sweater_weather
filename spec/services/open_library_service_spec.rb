@@ -8,8 +8,6 @@ RSpec.describe OpenLibraryService do
 
   it 'can search for books based on key words', :vcr do
     json = OpenLibraryService.get_books('denver,co', 2)
-
-
     expect(json).to have_key(:docs)
     expect(json[:docs]).to be_an Array
 
