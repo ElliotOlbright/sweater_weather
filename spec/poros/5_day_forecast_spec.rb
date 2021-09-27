@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe FiveDayWeather do
   it 'exists and has attributes' do
+    
     attrs = {:dt=>1632934800,
              :sunrise=>1632915396,
              :sunset=>1632958146,
@@ -30,11 +31,5 @@ RSpec.describe FiveDayWeather do
     expect(weather.min_temp).to eq(59.92)
     expect(weather.conditions).to eq("clear sky")
     expect(weather.icon).to eq("01d")
-
-
-
-
-
-
   end 
 end 
