@@ -25,7 +25,11 @@ RSpec.describe WeatherFacade do
     expect(coords[:lng]).to eq(-104.984853)
 
     json = WeatherService.get_weather(coords[:lat], coords[:lng])
-    
+
     expect(json).to have_key(:current)
+  end 
+
+  it 'can fetch full forecast', :vcr do 
+    WeatherFacade.fetch_forecast("denver, co")
   end 
 end
