@@ -11,5 +11,12 @@ class WeatherFacade
 				HourlyWeather.new(hour)
 			end
 		end
+
+    def get_5_day(lat, lon) 
+      json = WeatherService.get_weather(lat, lon)
+      json[:daily].first(5).map do |day|
+        FiveDayWeather.new(day)
+      end 
+    end 
   end 
 end

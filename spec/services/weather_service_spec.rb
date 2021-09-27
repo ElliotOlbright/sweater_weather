@@ -8,6 +8,7 @@ RSpec.describe WeatherService do
 
   it 'can get weather for a given destination', :vcr do
     json = WeatherService.get_weather('37.5858662', '-85.67330523')
+
     expect(json).to have_key(:current)
     expect(json[:current]).to be_a Hash
 
