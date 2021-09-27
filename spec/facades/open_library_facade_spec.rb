@@ -7,4 +7,12 @@ RSpec.describe OpenLibraryFacade do
       expect(book).to be_an_instance_of(OpenLibrary)
     end 
   end 
+
+  it 'can return books and weather', :vcr do 
+    data =  OpenLibraryFacade.get_book_forecast("Denver,co",2)
+    expect(data.books[0]).to be_an_instance_of(OpenLibrary)
+    expect(data.destination).to be_an_instance_of(BookForecast)
+    expect(data.total_books).to be_an_instance_of(BookForecast)
+    expect(data.forecast).to be_an_instance_of(Forecast)
+  end 
 end 
