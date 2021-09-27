@@ -16,4 +16,16 @@ RSpec.describe WeatherFacade do
     weather =  WeatherFacade.get_5_day('37.5858662', '-85.67330523')
     expect(weather[0]).to be_an_instance_of(FiveDayWeather)
   end 
+
+  it 'can get weather from location', :vcr do
+    data = MapquestService.get_coordinates("denver, co") 
+    coords = data[:results][0][:locations][0][:latLng]
+
+    expect(coords[:lat]).to eq(39.738453)
+    expect(coords[:lng]).to eq(-104.984853)
+
+    json = WeatherService.get_weather(coords[:lat], coords[:lng])
+    
+    expect(json).to have_key(:current)
+  end 
 end
