@@ -8,6 +8,6 @@ describe "Books API" do
     expect(response).to be_successful
 
     books = JSON.parse(response.body)
-    expect(books[:attributes][:books].count).to eq(25)
+    expect(books[:data][:attributes][:total_books]).to eq(25)
   end
 end
