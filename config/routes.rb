@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
         resources :weather, only: [:index]
-        resources :book_search, only: [:index]
+        resources :book_search, only: [:index],
+        path: 'book-search'
       end
     end
   end
