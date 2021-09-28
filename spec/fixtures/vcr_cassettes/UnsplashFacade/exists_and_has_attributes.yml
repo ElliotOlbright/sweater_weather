@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=1&per_page=1&query=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1150'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=2894&per_page=1&query=Denver>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=2&per_page=1&query=Denver>;
+        rel="next"
+      X-Total:
+      - '2894'
+      X-Per-Page:
+      - '1'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"41ae6ca485932df60775a08dd3a34ac9"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Request-Id:
+      - 191f8783-0b8f-407d-83f2-cd3b31219073
+      X-Runtime:
+      - '0.044478'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 28 Sep 2021 23:20:39 GMT
+      Age:
+      - '714'
+      X-Served-By:
+      - cache-dca17780-DCA, cache-den8239-DEN
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1632871240.958088,VS0,VE1
+      Vary:
+      - Accept-Encoding, Origin,Authorization,client-geo-region
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":2894,"total_pages":2894,"results":[{"id":"r82eni3j0bI","created_at":"2020-09-06T12:05:36-04:00","updated_at":"2021-09-28T16:19:02-04:00","promoted_at":null,"width":4862,"height":3646,"color":"#0c59c0","blur_hash":"LhC*9MtlR*V@KUazoekCIwWYaKa#","description":"Downtown
+        Denver and Capitol Building","alt_description":"white and gold dome building","urls":{"raw":"https://images.unsplash.com/photo-1599408169542-620fc453382c?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1599408169542-620fc453382c?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1599408169542-620fc453382c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1599408169542-620fc453382c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1599408169542-620fc453382c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/r82eni3j0bI","html":"https://unsplash.com/photos/r82eni3j0bI","download":"https://unsplash.com/photos/r82eni3j0bI/download","download_location":"https://api.unsplash.com/photos/r82eni3j0bI/download?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1"},"categories":[],"likes":21,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"iReUjmhpLcw","updated_at":"2021-09-28T16:52:30-04:00","username":"andrewcoop","name":"Andrew
+        Coop","first_name":"Andrew","last_name":"Coop","twitter_username":null,"portfolio_url":null,"bio":"I''m
+        an amateur who likes to shoot just about everything that looks interesting.  I
+        want to get more experience with portraiture, and will shoot personal photos
+        for anyone for free.  Where possible, attribution is appreciated please and
+        thank you.","location":"Aurora, CO, USA","links":{"self":"https://api.unsplash.com/users/andrewcoop","html":"https://unsplash.com/@andrewcoop","photos":"https://api.unsplash.com/users/andrewcoop/photos","likes":"https://api.unsplash.com/users/andrewcoop/likes","portfolio":"https://api.unsplash.com/users/andrewcoop/portfolio","following":"https://api.unsplash.com/users/andrewcoop/following","followers":"https://api.unsplash.com/users/andrewcoop/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1623106766393-2f16aecfe7b9image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":null,"total_collections":0,"total_likes":36,"total_photos":253,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":null,"portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"denver"},{"type":"search","title":"co"},{"type":"search","title":"usa"}]}]}'
+  recorded_at: Tue, 28 Sep 2021 23:20:39 GMT
+recorded_with: VCR 6.0.0
