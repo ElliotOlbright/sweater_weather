@@ -1,4 +1,4 @@
-class Api::V1::WeatherController < ApplicationController
+class Api::V1::ForecastController < ApplicationController
 	def index
     forecast = WeatherFacade.fetch_forecast(params[:location])
 
