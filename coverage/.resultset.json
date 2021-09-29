@@ -1,19 +1,36 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/spec/models/user_spec.rb": {
+      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/spec/requests/api/v1/users_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
-          2,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
           null,
           1,
           1,
           1,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           1,
           null,
           null,
@@ -297,7 +314,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -315,9 +332,38 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -342,8 +388,16 @@
           1,
           null
         ]
+      },
+      "/Users/elliotolbright/turing/mod3/projects/sweater_weather/app/serializers/users_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1632886565
+    "timestamp": 1632920572
   }
 }
