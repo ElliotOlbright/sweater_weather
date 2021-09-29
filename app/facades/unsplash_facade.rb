@@ -1,8 +1,8 @@
 class UnsplashFacade
   class << self
-    def get_image(query)
-      data = UnsplashService.get_image(query)
-      Unsplash.new([data[:results].first], query)
+    def get_image(location)
+      data = UnsplashService.get_image(location)
+      Unsplash.new([data[:results].first], location)
     end 
   end 
 end 

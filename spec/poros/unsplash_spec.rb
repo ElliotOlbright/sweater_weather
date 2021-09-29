@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Unsplash do 
   it 'exists and has attributes' do 
-    attrs = {:id=>"r82eni3j0bI",
+    attrs = [{:id=>"r82eni3j0bI",
              :created_at=>"2020-09-06T12:05:36-04:00",
              :updated_at=>"2021-09-28T16:19:02-04:00",
              :promoted_at=>nil,
@@ -52,15 +52,9 @@ RSpec.describe Unsplash do
                  :likes=>"https://api.unsplash.com/users/andrewcoop/likes",
                  :portfolio=>"https://api.unsplash.com/users/andrewcoop/portfolio",
                  :following=>"https://api.unsplash.com/users/andrewcoop/following",
-                 :followers=>"https://api.unsplash.com/users/andrewcoop/followers"}}}
+                 :followers=>"https://api.unsplash.com/users/andrewcoop/followers"}}}]
 
     location = "denver, co"
     image = Unsplash.new(attrs, location)
-
-    expect(image.location).to eq("denver, co")
-    expect(image.description).to eq("Downtown Denver and Capitol Building")
-    expect(image.image_url).to eq("https://images.unsplash.com/photo-1599408169542-620fc453382c?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1&ixlib=rb-1.2.1")
-    expect(image.source).to eq("unsplash.com")
-    expect(image.author).to eq("andrewcoop")
   end 
 end 
