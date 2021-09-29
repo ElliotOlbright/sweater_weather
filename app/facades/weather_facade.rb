@@ -31,5 +31,12 @@ class WeatherFacade
         FiveDayWeather.new(day)
       end 
     end 
+
+    def weather_at_eta(destination, travel_time)
+      weather = fetch_forecast(destination)
+			weather.hourly.find do |hour|
+				hour.dt.to_i >= (Time.now + travel_time[:unix_time]).to_i
+			end
+		end
   end 
 end

@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=1&per_page=1&query=Boulder,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1061'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      Link:
+      - <https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=5297&per_page=1&query=Boulder%2Cco>;
+        rel="last", <https://api.unsplash.com/search/photos?client_id=5ojovXl3F_UNvjQf6oErA53Rozng5MEiM6G6m7S_K20&page=2&per_page=1&query=Boulder%2Cco>;
+        rel="next"
+      X-Total:
+      - '5297'
+      X-Per-Page:
+      - '1'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"48c92d4cdb5919e9b718c9c53a235ce7"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '49'
+      X-Request-Id:
+      - a9c17354-fa9c-41fc-81a7-19e3c3dca1f7
+      X-Runtime:
+      - '0.151552'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 29 Sep 2021 14:22:21 GMT
+      Age:
+      - '66'
+      X-Served-By:
+      - cache-dca17755-DCA, cache-den8256-DEN
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1632925342.732238,VS0,VE1
+      Vary:
+      - Accept-Encoding, Origin,Authorization,client-geo-region
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":5297,"total_pages":5297,"results":[{"id":"jbWJR1Q7lxs","created_at":"2021-05-21T12:53:06-04:00","updated_at":"2021-09-29T02:26:32-04:00","promoted_at":null,"width":5184,"height":3456,"color":"#4073a6","blur_hash":"LfHCWkIURkjZ0Nt6ayofE2t6t6WW","description":null,"alt_description":"snow
+        covered mountain during daytime","urls":{"raw":"https://images.unsplash.com/photo-1621615894063-38f64a8c06a7?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1621615894063-38f64a8c06a7?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1621615894063-38f64a8c06a7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1621615894063-38f64a8c06a7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1621615894063-38f64a8c06a7?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/jbWJR1Q7lxs","html":"https://unsplash.com/photos/jbWJR1Q7lxs","download":"https://unsplash.com/photos/jbWJR1Q7lxs/download","download_location":"https://api.unsplash.com/photos/jbWJR1Q7lxs/download?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxCb3VsZGVyJTJDY298ZW58MHx8fHwxNjMyOTI1Mjc2"},"categories":[],"likes":1,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"user":{"id":"mb2pRnnwsKc","updated_at":"2021-09-28T15:12:49-04:00","username":"elevi1022","name":"Emily
+        Levine","first_name":"Emily","last_name":"Levine","twitter_username":null,"portfolio_url":"https://emilyiscreative.myportfolio.com/","bio":"Skilled
+        Designer and Creative Problem Solver living in Colorado.\r\n","location":null,"links":{"self":"https://api.unsplash.com/users/elevi1022","html":"https://unsplash.com/@elevi1022","photos":"https://api.unsplash.com/users/elevi1022/photos","likes":"https://api.unsplash.com/users/elevi1022/likes","portfolio":"https://api.unsplash.com/users/elevi1022/portfolio","following":"https://api.unsplash.com/users/elevi1022/following","followers":"https://api.unsplash.com/users/elevi1022/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1617828563079-5ec04b4eee01image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1617828563079-5ec04b4eee01image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1617828563079-5ec04b4eee01image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"emilyiscapturing","total_collections":7,"total_likes":6,"total_photos":47,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"emilyiscapturing","portfolio_url":"https://emilyiscreative.myportfolio.com/","twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"chautauqua"},{"type":"search","title":"boulder"},{"type":"search","title":"co"}]}]}'
+  recorded_at: Wed, 29 Sep 2021 14:22:21 GMT
+recorded_with: VCR 6.0.0
