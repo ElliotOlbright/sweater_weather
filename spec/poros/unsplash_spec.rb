@@ -58,5 +58,9 @@ RSpec.describe Unsplash do
     image = Unsplash.new(attrs, location)
 
     expect(image.location).to eq("denver, co")
+    expect(image.description).to eq("Downtown Denver and Capitol Building")
+    expect(image.image_url).to eq("https://images.unsplash.com/photo-1599408169542-620fc453382c?ixid=MnwyNjM5NDF8MHwxfHNlYXJjaHwxfHxEZW52ZXJ8ZW58MHx8fHwxNjMyODcwNTI1&ixlib=rb-1.2.1")
+    expect(image.source).to eq("unsplash.com")
+    expect(image.author).to eq("andrewcoop")
   end 
 end 
